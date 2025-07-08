@@ -1,0 +1,42 @@
+a.contact-link:hover {
+    background-color: yellow;
+}
+
+div.card::before {
+    content: "●";
+    font-size: xx-large;
+    color: yellow;
+    box-shadow: 3px 3px;
+}
+
+div.card > p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+div.card[data-role="admin"] {
+    border: 1px solid red;
+}
+
+div.card[data-role="admin"]::before {
+    content: "Admin";
+    font: 900;
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 5px;
+}
+
+div.profile-cards div:nth-child(3) {
+    border: 1px solid blue;
+}
+
+div.profile-cards div:nth-child(3)::before {
+    content: "Guest";
+    color: blue;
+    font-family: cursive;
+}
+
+.card[data-role="admin"] ~ .card:hover {
+    background-color: antiquewhite;
+}
